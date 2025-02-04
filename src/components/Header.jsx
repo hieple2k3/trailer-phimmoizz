@@ -1,5 +1,9 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
+
 
 const Header = ({ onSearch }) => {
   const [search, setSearch] = useState("");
@@ -24,15 +28,16 @@ const Header = ({ onSearch }) => {
         <input
           type="text"
           placeholder="Search"
-          className="border border-gray-300 p-2 text-black"
+          className="border border-gray-300 p-2 text-black rounded-xl"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         <button
-          className="bg-red-700 text-white px-3 py-1 rounded-lg"
+          className="bg-blue-700 text-white px-3 py-1 rounded-lg"
           onClick={() => onSearch(search)}
         >
-          Search
+          <FontAwesomeIcon icon={faSearch} />
+        
         </button>
       </div>
     </div>

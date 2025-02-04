@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="flex flex-col md:flex-row items-center justify-between absolute md:top-1/2 top-10 -translate-x-1/2 left-1/2 md:-translate-y-1/2 w-full ">
         <div className="md:w-[50%] w-full ">
           <div className="flex flex-col space-y-6 items-start p-10">
-            <p className="bg-gradient-to-r from-red-600 to-red-300 py-2 px-6">
+            <p className="bg-gradient-to-r from-red-600 to-red-300 py-2 px-6 rounded-xl font-bold">
               Hot Movie
             </p>
             <div className="flex flex-col space-y-4">
@@ -30,10 +30,10 @@ const Banner = () => {
             </div>
 
             <div className="flex items-center space-x-5">
-              <button className="py-2 px-3 bg-black  text-white border border-black font-bold">
+              <button className="py-2 px-3 bg-gradient-to-r from-pink-500 to-pink-300  text-white border border-black font-bold rounded-xl">
                 Chi tiết
               </button>
-              <button className="py-2 px-3 bg-red-600 text-white font-bold">
+              <button className=" py-2 px-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold rounded-xl">
                 Xem Phim
               </button>
             </div>
