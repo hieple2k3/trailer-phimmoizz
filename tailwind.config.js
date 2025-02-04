@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'banner' : "url('/phim-Ligth-Shop.jpg')",
+        'banner' : "url('/cua-hang-anh-sang.jpg')",
       }
     },
   },
